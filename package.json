@@ -1,0 +1,23 @@
+{
+  "name": "waspothegreat.github.io",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000w\u0000a\u0000s\u0000p\u0000o\u0000t\u0000h\u0000e\u0000g\u0000r\u0000e\u0000a\u0000t\u0000.\u0000g\u0000i\u0000t\u0000h\u0000u\u0000b\u0000.\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waspothegreat/waspothegreat.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waspothegreat/waspothegreat.github.io/issues"
+  },
+  "homepage": "https://github.com/waspothegreat/waspothegreat.github.io#readme"
+}
