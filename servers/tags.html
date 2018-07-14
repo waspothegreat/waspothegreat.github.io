@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+      
+        <title>Tags | Discord Server List</title>
+      
+    
+    <meta charset="utf-8" />
+    <meta name="mobile-web-app-capable" content="no" />
+
+    
+
+    <meta name="theme-color" content="#7289DA" />
+
+    <link rel="icon" href="/servers/favicon.png" type="image/png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel='stylesheet' type="text/css" href='/servers/css/main.css?20170211' />
+    <link rel='stylesheet' type="text/css" href='/servers/css/hover.css' />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+    <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/button.css' />
+    <link rel='stylesheet' type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/icon.css' />
+
+    
+
+    
+
+      
+        <meta name="twitter:title" content="Tags | Discord Server List" />
+        <meta itemprop="name" content="Tags | Discord Server List">
+        <meta property="og:title" content="Tags | Discord Server List">
+      
+
+      <meta itemprop="description" content="Find servers with tags you&#39;re interested in!">
+      <meta itemprop="image" content="/servers/favicon.png">
+
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:url" value="https://discordbots.org/servers" />
+      
+
+      <meta name="twitter:title" content="Discord Servers | Discord Server List" />
+
+      <meta name="twitter:description" content="Find servers with tags you&#39;re interested in!" />
+      <meta name="twitter:image" content="/servers/favicon.png">
+
+      <meta property="og:url" content="https://discordbots.org/servers">
+      <meta property="og:image" content="/servers/favicon.png" />
+      <meta property="og:description" content="Find servers with tags you&#39;re interested in!">
+      <meta property="og:site_name" content="Discord Servers">
+
+      <meta name="description" content="Find servers with tags you&#39;re interested in!" />
+    
+
+  <script type="text/javascript" src="https://gc.ksk.v2.scr.kaspersky-labs.com/EFCD759C-7241-834D-89E2-B0A10F05B9F5/main.js" charset="UTF-8"></script></head>
+  <body>
+    <section class="page" id="home-page">
+  <div class="shapes-background shapes-1"></div>
+  <div class="shapes-background shapes-2"></div>
+  <div class="shapes-background shapes-3"></div>
+  <article>
+    <nav class="is-widescreen is-mobile"  id="menu">
+<style>
+@media only screen and (max-width: 600px) {
+    .alert {
+        display: none!important;
+    }
+}
+</style>
+  <input type="checkbox" id="show-menu">
+  <label id="menu-trigger" for="show-menu">
+    <span class="menu-bar menu-bar-1 white"></span>
+    <span class="menu-bar menu-bar-2 white"></span>
+    <span class="menu-bar menu-bar-3 white"></span>
+  </label>
+  <div class="menu container">
+    <ul>
+      <li><a class="logo" id="home" href="/servers/"><img src="/servers/images/serverbot.svg" alt="Discord Server List" title="Discord Server List"></a></li>
+      <li><span style="cursor:pointer" onclick="outlinkDuplicate('/servers/')">Home</span></li>
+      <li><a target="_blank" href="https://discordbots.org/blog">Blog</a></li>
+      <li><a target="_blank" href="https://discordbots.org">Discord Bots</a></li>
+      <li><a target="_blank" href="https://discord.gg/pFPrbyq">Join Our Discord</a></li>
+      <li><a href="/servers/new">Add Your Server</a></li>
+      
+        <li><a href="/servers/login?redirect=%2Fservers%2Ftags">Login</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    
+      
+  <header >
+      <div class="container is-widescreen">
+          <div class="columns is-tablet">
+              <div class="column is-two-thirds">
+                  <h1 id="botlistitle">Tags</h1>
+                  <h2>Find servers with tags you&#39;re interested in!</h2>
+                  <div class="input-with-btn"><input class="mainsearch" type="search"
+                                                     placeholder="Anime, PUBG, Fortnite, Memes...">
+                      <button class="btn" onClick="search(this)">Search</button>
+                  </div>
+                  <div class="holder">
+                      <div class="expandedsearchres" id="searchopts">
+                          <div id="searchoptionlist">
+                              <p id="expandedsearchtitle">Search Options</p>
+                              <p onclick="fillsearch('tag:')">tag: <span
+                                          class="expandedsearchexample">category</span></p>
+                          </div>
+                          <div id="searchtaglist">
+                          </div>
+                          <div id="searchliblist">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="featuredbuttonss">
+                      <a href="/servers/list/top" id="tag-top">
+                          <button href="/servers/list/top" class="ui colorr button ">
+                              <i class="list layout icon"></i>
+                              Top
+                          </button>
+                      </a>
+                      <a href="/servers/tag/gaming" id="tag-gaming">
+                          <button href="/servers/tag/gaming" class="ui colorr button">
+                              <i class="game icon"></i>
+                              Gaming
+                          </button>
+                      </a>
+                      <a href="/servers/tag/pubg" id="tag-gaming">
+                          <button href="/servers/tag/pubg" class="ui colorr button">
+                              <i class="game icon"></i>
+                              PUBG
+                          </button>
+                      </a>
+                      <a href="/servers/tag/fortnite" id="tag-gaming">
+                          <button href="/servers/tag/fortnite" class="ui colorr button">
+                              <i class="game icon"></i>
+                              Fortnite
+                          </button>
+                      </a>
+                      <a href="/servers/list/new" id="tag-new">
+                          <button class="ui colorr button ">
+                              <i class="wizard icon"></i>
+                              New
+                          </button>
+                      </a>
+                      <a href="/servers/tags" id="tag-explore">
+                          <button href="/servers/tags" class="ui colorr button ">
+                              <i class="tags icon"></i>
+                              More Tags
+                          </button>
+                      </a>
+
+                  </div>
+              </div>
+              <div class="column">
+                  <div id="illustration"><img src="/servers/assets/images/discord_v2.1225443.svg"></div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+
+<!--
+  <div class="alert">
+    <i class="heart icon"></i> Alert box
+  </div>
+-->
+
+    
+    <div id="bots">
+      <div class="container is-fullhd">
+        <div class="section-title is-flex">
+          <img src="/servers/images/tag.svg" alt="Currently Popular Tags" title="Currently Popular Tags"></i><span><h4>Currently Popular Tags</h4><p>Tags that users are using the most!</p></span>
+        </div>
+        <div class="bot-list-section">
+          <div class="maincon">
+            <div id="featuredtags">
+              <div id="wrapperrr">
+                <a href="/servers/tag/gaming">
+                  <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Gaming</button>
+                </a><a href="/servers/tag/social">
+                  <button class="tagbutton hvr-sweep-to-right"><i class="talk icon"></i> Social</button>
+                </a><a href="/servers/tag/fun">
+                  <button class="tagbutton hvr-sweep-to-right"><i class="wizard icon"></i> Fun</button>
+                </a><a href="/servers/tag/economy">
+                  <button class="tagbutton hvr-sweep-to-right"><i class="money icon"></i> Economy</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-title is-flex">
+          <img src="/servers/images/tag.svg" alt="All Tags" title="All Tags"></i><span><h4>All Tags</h4><p>A list of all the pre-defined tags currently on our site!</p></span>
+        </div>
+        <div class="bot-list-section">
+          <div class="maincon">
+            <div id="featuredtags">
+              <div id="wrapperrr">
+                
+                  <a href="/servers/tag/anime">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="feed icon"></i> Anime</button>
+                  </a>
+                
+                  <a href="/servers/tag/gaming">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Gaming</button>
+                  </a>
+                
+                  <a href="/servers/tag/roleplay">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="comment icon"></i> Roleplay</button>
+                  </a>
+                
+                  <a href="/servers/tag/economy">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="money icon"></i> Economy</button>
+                  </a>
+                
+                  <a href="/servers/tag/meme">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="plus icon"></i> Meme</button>
+                  </a>
+                
+                  <a href="/servers/tag/stream">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="power icon"></i> Stream</button>
+                  </a>
+                
+                  <a href="/servers/tag/social">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="comments icon"></i> Social</button>
+                  </a>
+                
+                  <a href="/servers/tag/fun">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="wizard icon"></i> Fun</button>
+                  </a>
+                
+                  <a href="/servers/tag/music">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="music icon"></i> Music</button>
+                  </a>
+                
+                  <a href="/servers/tag/crypto">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="money icon"></i> Crypto</button>
+                  </a>
+                
+                  <a href="/servers/tag/developer">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="terminal icon"></i> Developer</button>
+                  </a>
+                
+                  <a href="/servers/tag/api">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="sitemap icon"></i> API</button>
+                  </a>
+                
+                  <a href="/servers/tag/kpop">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="lab icon"></i> KPop</button>
+                  </a>
+                
+                  <a href="/servers/tag/emotes">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="smile icon"></i> Emotes</button>
+                  </a>
+                
+                  <a href="/servers/tag/support-server">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="life ring icon"></i> Support Server</button>
+                  </a>
+                
+                  <a href="/servers/tag/lfg">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> LFG</button>
+                  </a>
+                
+                  <a href="/servers/tag/overwatch">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Overwatch</button>
+                  </a>
+                
+                  <a href="/servers/tag/rocket-league">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Rocket League</button>
+                  </a>
+                
+                  <a href="/servers/tag/osu!">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> OSU!</button>
+                  </a>
+                
+                  <a href="/servers/tag/minecraft">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Minecraft</button>
+                  </a>
+                
+                  <a href="/servers/tag/league-of-legends">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> League of Legends</button>
+                  </a>
+                
+                  <a href="/servers/tag/warframe">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Warframe</button>
+                  </a>
+                
+                  <a href="/servers/tag/diablo-iii">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Diablo III</button>
+                  </a>
+                
+                  <a href="/servers/tag/rust">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Rust</button>
+                  </a>
+                
+                  <a href="/servers/tag/csgo">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> CSGO</button>
+                  </a>
+                
+                  <a href="/servers/tag/fortnite">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Fortnite</button>
+                  </a>
+                
+                  <a href="/servers/tag/pubg">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> PUBG</button>
+                  </a>
+                
+                  <a href="/servers/tag/dota-2">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> DOTA 2</button>
+                  </a>
+                
+                  <a href="/servers/tag/starcraft-2">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Starcraft 2</button>
+                  </a>
+                
+                  <a href="/servers/tag/factorio">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Factorio</button>
+                  </a>
+                
+                  <a href="/servers/tag/rust">
+                    <button class="tagbutton hvr-sweep-to-right"><i class="game icon"></i> Rust</button>
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+    <footer>
+  <div class="centered clearfix">
+    <div class="footer-logo">
+      <img class="logo" src="/servers/images/server_bot.gif" width="150px" height="150px" />
+    </div>
+    <div class="footer-contact">
+      <h3>CONTACT</h3>
+      <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="394a4c4949564b4d795d504a5a564b5d5b564d4a17564b5e">[email&#160;protected]</a></p>
+      <p>+1 (657) 229-3345</p>
+    </div>
+    <div class="footer-navigation">
+      <div class="footer-links-holder">
+        <h3>IMPORTANT LINKS</h3>
+        <ul class="footer-links">
+          <li>
+            <a href="/terms">Terms of Service & Privacy</a>
+          </li>
+          <li>
+            <a href="/advertise">Advertise on DBots</a>
+          </li>
+          <li>
+            <a href="/blog/post/how-to-make-a-discord-bot" id="howToMakeDiscordBot">How To Make A Discord Bot</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links-holder">
+        <h3>PARTNERS</h3>
+        <ul class="footer-links">
+          <li>
+            <a href="https://medal.tv">Medal</a>
+          </li>
+          <li>
+            <a href="https://minecraftservers.biz">MinecraftServers.biz</a>
+          </li>
+          <li>
+            <a href = 'https://www.gameserverkings.com'>GameserverKings</a>
+          </li>
+        </ul>
+      </div>
+      <!--
+      <div class="footer-links-holder">
+        <h3>EXTRAS</h3>
+        <ul class="footer-links">
+          <li>
+            <span onclick="enableDarkTheme(this)" >
+              <span>Dark Theme</span>
+              <label class="dThemeSwitch">
+                <input id="darkThemeEnabler" type="checkbox" />
+                 <span class="slider round"></span>
+              </label>
+            </span>
+          </li>
+        </ul>
+      </div>
+    -->
+    </div>
+  </div>
+  <div class="bottom-bar">
+    All Rights Reserved © 2018
+    <p class="disclaimer">
+      Gooimeer 8, 1411DD Naarden, The Netherlands. KVK registration number: 70654115, The Netherlands. Use of this Web site constitutes acceptance of the Terms and Conditions and Privacy Policy. All copyrights, trademarks, service marks belong to the corresponding owners.
+
+      For support email us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f0838580809f8284b0949983939f8294929f8483de9f8297">[email&#160;protected]</a> or call at +1 (657) 229-3345
+    </p>
+  </div>
+</footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script></body>
+  <div id="scripts">
+    <script type="text/javascript" src="/servers/js/main.js"></script>
+    
+      <script>
+var validTags = ["Anime","Gaming","Roleplay","Economy","Meme","Stream","Social","Fun","Music","Crypto","Developer","API","KPop","NSFW","Emotes","Support Server","LFG","Overwatch","Rocket League","OSU!","Minecraft","League of Legends","Warframe","Diablo III","Rust","CSGO","Fortnite","PUBG","DOTA 2","Starcraft 2","Factorio","Rust"]
+var searchbar = document.querySelector('input[type="search"]');
+var searchtaglist = document.getElementById('searchtaglist');
+
+function search(el) {
+  location.href = "/servers/search?q="+el.parentNode.querySelector('input').value
+}
+
+function fillsearch(filler, removeLastWord) {
+  var search = document.querySelector('input[type="search"]');
+  if (removeLastWord) {
+    var temp = search.value.split(' ');
+    temp.splice(-1);
+    search.value = temp.join(' ');
+  }
+  search.value = search.value + (search.value && search.value.slice(-1) != ' ' ? ' ' : '') + filler + ' ';
+  search.focus();
+}
+
+document.querySelector('input[type="search"]').addEventListener('keyup', function(ev){
+  if (ev.keyCode == 13) search(ev.target);
+})
+
+var timeout, timeout2;
+
+document.querySelector('input[type="search"]').addEventListener('focus', function(e) {
+  processInsides();
+  var el = document.getElementById('searchopts');
+  el.style.display = 'block';
+  clearTimeout(timeout);
+  clearTimeout(timeout2);
+  setTimeout(function(){el.classList.add('open')}, 25);;
+});
+
+document.querySelector('input[type="search"]').addEventListener('input', function(e) {
+  processInsides();
+});
+
+function processInsides() {
+  var words = searchbar.value.split(' ');
+  var lastWord = words[words.length-1];
+  if ((words[words.length-2] && words[words.length-2].startsWith('tag:')) || (words[words.length-1] && words[words.length-1].startsWith('tag:'))) {
+    document.getElementById('searchoptionlist').style.display = 'none';
+    document.getElementById('searchtaglist').style.display = 'block';
+    filterSuggestions('tag', lastWord, words[words.length-2] != 'tag:');
+  } else {
+    document.getElementById('searchoptionlist').style.display = 'block';
+    document.getElementById('searchtaglist').style.display = 'none';
+    filterSuggestions('tag', lastWord, words[words.length-2] != 'tag:');
+  }
+}
+
+function filterSuggestions(type, input, includeTagFill) {
+  var validSet = type == 'tag' ? validTags : undefined;
+  if (input && input != 'tag:') {
+    input = input.replace('tag:', '');
+    var suggestions = validSet.filter(function(t){return t.toLowerCase().startsWith(input.toLowerCase())});
+  } else {
+    var suggestions = validSet;
+  }
+  suggestions = suggestions.map(function(s){if (!searchbar.value.includes('tag: ' + s) && !searchbar.value.includes('tag:' + s)) return '<p onclick="fillsearch(\''+(includeTagFill ? type + ': ' : '')+s+'\', true)">'+s+'</p>'});
+  suggestions.unshift('<p id="expandedsearchtitle">'+(type == 'tag' ? 'Tags' : '')+'</p>');
+  (type == 'tag' ? searchtaglist : undefined).innerHTML = suggestions.join('\n');
+  if (includeTagFill && input && input != "tag:" && suggestions.length != 1) {
+    (type == 'tag' ? searchtaglist : undefined).style.display = 'block';
+  } else if (includeTagFill && input && input != "tag:" && suggestions.length == 1) {
+    (type == 'tag' ? searchtaglist : undefined).style.display = 'none';
+  }
+}
+
+document.querySelector('input[type="search"]').addEventListener('focusout', function(e) {
+  timeout2 = setTimeout(function(){
+    var el = document.getElementById('searchopts');
+    el.classList.remove('open');
+    timeout = setTimeout(function(){el.style.display='none'}, 250);
+  }, 75);
+});
+</script>
+    
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-98194944-1', 'auto');
+      ga('send', 'pageview');
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '320184805116299');
+      fbq('track', 'PageView');
+    </script>
+  </div>
+</html>
